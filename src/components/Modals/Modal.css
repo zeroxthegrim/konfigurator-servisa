@@ -1,0 +1,444 @@
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    background: silver;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+}
+
+
+.modal__title {
+    text-align: center;  
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__step {
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px black solid;
+}
+
+.modal__inputBtnContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.modal__inputUnit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    width: 15%;
+
+}
+
+.modal__inputCheckboxUnit {
+    display: block;
+    margin: 20px;
+    width: 25%;
+    
+}
+
+.modal__inputUnit > input {
+    margin-right: 5px;
+}
+
+.modal__inputCheckboxUnit > input {
+    margin-right: 5px;
+}
+
+.modal__bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    border-top: 1px solid black;
+}
+
+.modal__bottom > button {
+    height: 40px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.modal__closeIcon {
+    position: absolute;
+    right:0;
+    margin-right: 15px;
+    cursor: pointer
+}
+
+.modal__amount {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+}
+
+.modal__coupon {   
+    margin-bottom: 10px;
+        
+}
+
+.modal__total {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal__coupon > p {
+    display: inline-block;
+    color: rgb(67, 67, 241);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal__couponInput {
+    margin-bottom: 15px;
+}
+
+.modal__couponForm > input {
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.modal__couponForm > button {
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal__taxes > p {
+    margin-bottom: 5px;
+}
+
+.modal__validCoupon {
+    margin-bottom: 15px;
+}
+
+.modal__validCouponFirst{
+    font-size: 16px;
+    
+    color: green;
+}
+
+.modal__validCouponSecond{
+    font-size:14px;
+    color: rgb(65, 65, 245);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal__notValidText {
+    font-size:12px;
+    color: red;
+    margin-top: -10px;
+}
+
+
+.modal__contactContainer {
+    margin: 20px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.modal__contactInput {
+    margin: 15px 0;
+}
+
+.modal__contactInputTag {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.modal__contactInput > input{
+    max-width: 400px;
+    width: 400px;
+    outline-width: 0;
+    border: none;
+    padding: 5px 20px;
+    margin: 15px 10px;
+    border-radius: 999px;
+    background-color: #eff2f5;
+    margin-bottom: 5px;
+}
+
+.modal__contactError {
+    font-size: 12px;
+    color: red;
+    margin-left: 10px;
+    margin-right: 0;
+    
+    width: 200px;
+    position: absolute;
+}
+
+.modal__textarea {
+    display: block;
+    margin: 15px 10px;
+    padding: 5px 20px;
+    width: 400px;
+    height: 100px;
+    background-color: #eff2f5
+}
+
+.modal__contactDataReviewContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.modal__contactDataReviewRow {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.modal__contactDataReviewElement {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.modal__contactDataReviewElementTop {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.modal__contactDataReviewElementTop > button {
+    margin-left: 20px;
+    width: 50px;
+    min-width: 50px;
+    max-height: 30px;
+}
+
+.modal__contactDataReviewServices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__contactDataReviewTotal {
+    text-align: end;
+    margin-top: 15px;
+}
+
+.modal__contactDataReviewDiscount {
+    margin-bottom:10px;
+}
+
+.modal__contactDataReviewTotalPrice {
+    font-weight: bold;
+}
+
+.modal__contactDataReviewBottomUnit {
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+
+.modal__contactDataBottomUnitLeft {
+    width: 100px;
+    margin-right: 80px;
+}
+
+.withoutTop {
+    margin-top: 45px;
+}
+
+.responsiveModal {
+    height: 80%;
+}
+
+.modal__responsiveModalText {
+    margin-top:15px;
+    padding: 10px;
+}
+
+.reviewRowBottom {
+    border-top: 1px black solid;
+    padding-top: 25px;
+}
+
+
+.napomena {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.napomenaText {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.closingModal {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.closingModalContainer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    position: absolute;
+}
+
+.closingModalContainer > p {
+    margin: 20px;
+}
+
+.closingModalContainer > button {
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media screen and (max-width:980px) {
+    .modal__contactDataReviewRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal__contactDataReviewElement {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .withoutTop {
+        margin-top: 0;
+    }
+
+    .responsiveModal {
+        height: default;
+        position: absolute;
+        overflow: scroll
+    }
+
+    .responsiveBottom {
+        position: static;
+        border: none;
+        padding-bottom: 30px;
+    }
+
+    .napomena {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:740px) {
+    .modal {
+        width:80%;
+        height: 80%;
+
+    }
+
+    .modal__contactInput {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .modal__inputUnit {
+        margin: 5px;
+        width: 1000px;
+        font-size: 16px;
+    }
+
+    .modal__amount {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: flex-start;
+        position: static;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 20px;;
+    }
+
+    .closingModalContainer {
+        width: 80%;
+    }
+
+    .modal__total {
+        margin-left: 50px;
+    }
+
+    .modal__inputCheckboxUnit {
+        width:50%;
+        font-size:13px;
+        margin: 5px;
+    }
+
+    .modal__validCouponFirst {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .modal__taxes {
+        margin-left: 10px;
+    }
+
+    .modal__notValidText {
+        margin-top: 2px;
+        margin-left: 10px;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .modal {
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal__inputUnit {
+        margin: 5px;
+        width: 1000px;
+        font-size: 14px;
+    }
+
+    .modal__contactInput > textarea {
+        height: 60px;
+        max-width: 300px;
+    }
+
+    .modal__contactInputTag {
+        font-size: 10px;
+    }
+}
